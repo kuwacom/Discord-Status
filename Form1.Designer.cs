@@ -83,9 +83,6 @@
             this.button1URLText = new System.Windows.Forms.TextBox();
             this.button1LabelText = new System.Windows.Forms.TextBox();
             this.consoleLogLabel = new System.Windows.Forms.Label();
-            this.credit = new System.Windows.Forms.Label();
-            this.kuwacom = new System.Windows.Forms.LinkLabel();
-            this.kuwa_network = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             this.partyGroupLabel.SuspendLayout();
             this.largeImageGroup.SuspendLayout();
@@ -140,7 +137,8 @@
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(12, 597);
             this.button2.Name = "button2";
@@ -301,7 +299,8 @@
             // 
             // largeImageTextText
             // 
-            this.largeImageTextText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.largeImageTextText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.largeImageTextText.Location = new System.Drawing.Point(289, 22);
             this.largeImageTextText.Name = "largeImageTextText";
             this.largeImageTextText.Size = new System.Drawing.Size(186, 23);
@@ -309,7 +308,6 @@
             // 
             // largeImageTextLabel
             // 
-            this.largeImageTextLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.largeImageTextLabel.AutoSize = true;
             this.largeImageTextLabel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.largeImageTextLabel.Location = new System.Drawing.Point(246, 25);
@@ -320,8 +318,6 @@
             // 
             // largeImageKeyText
             // 
-            this.largeImageKeyText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.largeImageKeyText.Location = new System.Drawing.Point(51, 22);
             this.largeImageKeyText.Name = "largeImageKeyText";
             this.largeImageKeyText.Size = new System.Drawing.Size(186, 23);
@@ -339,7 +335,8 @@
             // 
             // smallImageTextText
             // 
-            this.smallImageTextText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.smallImageTextText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.smallImageTextText.Location = new System.Drawing.Point(289, 22);
             this.smallImageTextText.Name = "smallImageTextText";
             this.smallImageTextText.Size = new System.Drawing.Size(186, 23);
@@ -347,7 +344,6 @@
             // 
             // smallImageTextLabel
             // 
-            this.smallImageTextLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.smallImageTextLabel.AutoSize = true;
             this.smallImageTextLabel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.smallImageTextLabel.Location = new System.Drawing.Point(246, 25);
@@ -358,8 +354,6 @@
             // 
             // smallImageKeyText
             // 
-            this.smallImageKeyText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.smallImageKeyText.Location = new System.Drawing.Point(51, 22);
             this.smallImageKeyText.Name = "smallImageKeyText";
             this.smallImageKeyText.Size = new System.Drawing.Size(186, 23);
@@ -461,6 +455,7 @@
             // 
             // timeStampEndCheck
             // 
+            this.timeStampEndCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.timeStampEndCheck.AutoSize = true;
             this.timeStampEndCheck.Location = new System.Drawing.Point(289, 26);
             this.timeStampEndCheck.Name = "timeStampEndCheck";
@@ -471,6 +466,7 @@
             // 
             // timeStampEndText
             // 
+            this.timeStampEndText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.timeStampEndText.Checked = false;
             this.timeStampEndText.CustomFormat = "yyyy/MM/dd HH:mm:ss";
             this.timeStampEndText.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -492,6 +488,8 @@
             // 
             // timeStampStartText
             // 
+            this.timeStampStartText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.timeStampStartText.Checked = false;
             this.timeStampStartText.CustomFormat = "yyyy/MM/dd HH:mm:ss";
             this.timeStampStartText.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -649,45 +647,11 @@
             this.consoleLogLabel.TabIndex = 59;
             this.consoleLogLabel.Text = "Console Log";
             // 
-            // credit
-            // 
-            this.credit.AutoSize = true;
-            this.credit.Location = new System.Drawing.Point(292, 9);
-            this.credit.Name = "credit";
-            this.credit.Size = new System.Drawing.Size(201, 15);
-            this.credit.TabIndex = 60;
-            this.credit.Text = "Made BY kuwacom of kuwa-network";
-            // 
-            // kuwacom
-            // 
-            this.kuwacom.AutoSize = true;
-            this.kuwacom.Location = new System.Drawing.Point(342, 9);
-            this.kuwacom.Name = "kuwacom";
-            this.kuwacom.Size = new System.Drawing.Size(58, 15);
-            this.kuwacom.TabIndex = 61;
-            this.kuwacom.TabStop = true;
-            this.kuwacom.Text = "kuwacom";
-            this.kuwacom.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.kuwacom_LinkClicked);
-            // 
-            // kuwa_network
-            // 
-            this.kuwa_network.AutoSize = true;
-            this.kuwa_network.Location = new System.Drawing.Point(413, 9);
-            this.kuwa_network.Name = "kuwa_network";
-            this.kuwa_network.Size = new System.Drawing.Size(83, 15);
-            this.kuwa_network.TabIndex = 62;
-            this.kuwa_network.TabStop = true;
-            this.kuwa_network.Text = "kuwa-network";
-            this.kuwa_network.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.kuwa_network_LinkClicked);
-            // 
             // window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 740);
-            this.Controls.Add(this.kuwa_network);
-            this.Controls.Add(this.kuwacom);
-            this.Controls.Add(this.credit);
             this.Controls.Add(this.consoleLogLabel);
             this.Controls.Add(this.buttonGroup);
             this.Controls.Add(this.timeStampGroup);
@@ -706,7 +670,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(521, 567);
+            this.MaximumSize = new System.Drawing.Size(1000, 779);
+            this.MinimumSize = new System.Drawing.Size(521, 779);
             this.Name = "window";
             this.Text = "Discord Status";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -786,8 +751,5 @@
         private TextBox button1LabelText;
         private Label consoleLogLabel;
         private ToolStripMenuItem リセットrToolStripMenuItem;
-        private Label credit;
-        private LinkLabel kuwacom;
-        private LinkLabel kuwa_network;
     }
 }
