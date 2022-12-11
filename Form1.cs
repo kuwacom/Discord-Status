@@ -1,11 +1,11 @@
 
 using DiscordRPC;
+using System.Diagnostics;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Text.Unicode;
-using System.Windows.Forms;
 using Button = DiscordRPC.Button;
 
 namespace discord_status
@@ -599,6 +599,25 @@ namespace discord_status
             button1URLText.Text = "";
             button2LabelText.Text = "";
             button2URLText.Text = "";
+        }
+
+        private void kuwacom_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo()
+            {
+                FileName = "https://kuwa.dev/",
+                UseShellExecute = true,
+            });
+        }
+
+        private void kuwa_network_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo()
+            {
+                FileName = "https://kuwa.app/",
+                UseShellExecute = true,
+            });
+
         }
     }
 }

@@ -39,6 +39,7 @@
             this.保存ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.設定をエクスポートToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.設定をインポートToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.リセットrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.保存ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ヘルプToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.detailsText = new System.Windows.Forms.TextBox();
@@ -82,7 +83,9 @@
             this.button1URLText = new System.Windows.Forms.TextBox();
             this.button1LabelText = new System.Windows.Forms.TextBox();
             this.consoleLogLabel = new System.Windows.Forms.Label();
-            this.リセットrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.credit = new System.Windows.Forms.Label();
+            this.kuwacom = new System.Windows.Forms.LinkLabel();
+            this.kuwa_network = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             this.partyGroupLabel.SuspendLayout();
             this.largeImageGroup.SuspendLayout();
@@ -193,6 +196,13 @@
             this.設定をインポートToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.設定をインポートToolStripMenuItem.Text = "設定をインポート(&i)...";
             this.設定をインポートToolStripMenuItem.Click += new System.EventHandler(this.importSetting);
+            // 
+            // リセットrToolStripMenuItem
+            // 
+            this.リセットrToolStripMenuItem.Name = "リセットrToolStripMenuItem";
+            this.リセットrToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.リセットrToolStripMenuItem.Text = "リセット(&r)";
+            this.リセットrToolStripMenuItem.Click += new System.EventHandler(this.resetSetting);
             // 
             // 保存ToolStripMenuItem1
             // 
@@ -639,18 +649,45 @@
             this.consoleLogLabel.TabIndex = 59;
             this.consoleLogLabel.Text = "Console Log";
             // 
-            // リセットrToolStripMenuItem
+            // credit
             // 
-            this.リセットrToolStripMenuItem.Name = "リセットrToolStripMenuItem";
-            this.リセットrToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.リセットrToolStripMenuItem.Text = "リセット(&r)";
-            this.リセットrToolStripMenuItem.Click += new System.EventHandler(this.resetSetting);
+            this.credit.AutoSize = true;
+            this.credit.Location = new System.Drawing.Point(292, 9);
+            this.credit.Name = "credit";
+            this.credit.Size = new System.Drawing.Size(201, 15);
+            this.credit.TabIndex = 60;
+            this.credit.Text = "Made BY kuwacom of kuwa-network";
+            // 
+            // kuwacom
+            // 
+            this.kuwacom.AutoSize = true;
+            this.kuwacom.Location = new System.Drawing.Point(342, 9);
+            this.kuwacom.Name = "kuwacom";
+            this.kuwacom.Size = new System.Drawing.Size(58, 15);
+            this.kuwacom.TabIndex = 61;
+            this.kuwacom.TabStop = true;
+            this.kuwacom.Text = "kuwacom";
+            this.kuwacom.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.kuwacom_LinkClicked);
+            // 
+            // kuwa_network
+            // 
+            this.kuwa_network.AutoSize = true;
+            this.kuwa_network.Location = new System.Drawing.Point(413, 9);
+            this.kuwa_network.Name = "kuwa_network";
+            this.kuwa_network.Size = new System.Drawing.Size(83, 15);
+            this.kuwa_network.TabIndex = 62;
+            this.kuwa_network.TabStop = true;
+            this.kuwa_network.Text = "kuwa-network";
+            this.kuwa_network.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.kuwa_network_LinkClicked);
             // 
             // window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 740);
+            this.Controls.Add(this.kuwa_network);
+            this.Controls.Add(this.kuwacom);
+            this.Controls.Add(this.credit);
             this.Controls.Add(this.consoleLogLabel);
             this.Controls.Add(this.buttonGroup);
             this.Controls.Add(this.timeStampGroup);
@@ -749,5 +786,8 @@
         private TextBox button1LabelText;
         private Label consoleLogLabel;
         private ToolStripMenuItem リセットrToolStripMenuItem;
+        private Label credit;
+        private LinkLabel kuwacom;
+        private LinkLabel kuwa_network;
     }
 }
