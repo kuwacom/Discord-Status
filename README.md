@@ -3,6 +3,10 @@
 Discordのstatusをカスタマイズするソフトです<br>
 ![image](https://user-images.githubusercontent.com/83022348/206895773-1c721900-5d6f-496b-8f46-9b2d9db7e14e.png)
 ## HOW TO USE
+### 追記
+これらの設定をする前にDiscordの設定を見直してください。<br>
+設定 > アクティビティのプライバシー<br>
+![image](https://github.com/kuwacom/discord-status/assets/83022348/72929295-5a09-47b0-a2db-0d11d8828765)<br>
 ### 1.アプリケーション作成
 まず初めにDiscord Developer Portal へアクセスし表示用のアプリケーションを作成します。<br>
 [https://discord.com/developers/applications](https://discord.com/developers/applications)<br>
